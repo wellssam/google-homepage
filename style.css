@@ -1,0 +1,57 @@
+
+body {
+    background-color: white;
+    font-family: arial, sans-serif;
+    margin: 20px;
+}
+   
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    /*grid rules wip
+    display: grid;
+    grid-template-rows: 1fr, auto-fill, 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    */
+}
+nav {
+    justify-self: flex-start;
+}
+footer{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-bottom: 5px;
+    justify-self: flex-end;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.logo{ 
+    text-align: center;
+}
+.searchbar{
+    text-align: center;
+}
+.language-note{
+    text-align: center;
+
+}
+
+.flex-start{
+    flex-grow: 1;
+}
+.flex-end{
+    flex-grow: 1;
+}
+.flex-spacer{
+    flex-grow: 10;
+}
+#tile-logo{
+margin-top: -10px;
+}
