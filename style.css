@@ -3,12 +3,17 @@ body {
     background-color: white;
     font-family: arial, sans-serif;
     margin: 20px;
+    height: 100%;
+    color: dark gray;
 }
    
 .container{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    position: absolute;
+    width: 95vw;
+    height: 95vh;
     /*grid rules wip
     display: grid;
     grid-template-rows: 1fr, auto-fill, 1fr;
@@ -18,28 +23,60 @@ body {
 }
 nav {
     justify-self: flex-start;
+    margin-bottom: auto;
 }
 footer{
     grid-column-start: 1;
     grid-row-start: 4;
-    margin-bottom: 5px;
+    margin-bottom: -25px;
+    margin-top: auto;
+    margin-left: -20px;
     justify-self: flex-end;
+    border-radius: 0px;
+    border-color: black;
+    background-color: rgba(0,0,0,.10);
+    width: 100vw;
+
 }
 ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 .logo{ 
     text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 3vh;
 }
 .searchbar{
     text-align: center;
+    margin-bottom: 3vh;
+}
+input {
+    width: 450px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px;
+    border-color: rgba(0,0,0,.15);
+    outline: none;
+}
+.button-container{
+    text-align: center;
+}
+.buttons{
+    font-size: 16px;
+    color: rgb(54, 54, 54);
+    padding: 10px;
+    border-color: transparent;
+    margin: 5px;
 }
 .language-note{
     text-align: center;
+    margin-top: 3vh;
+    font-size: 12px;
 
 }
 
